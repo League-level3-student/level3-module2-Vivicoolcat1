@@ -24,6 +24,9 @@ class _01_SwappingDigits {
 	
 	//1. Complete the method so that the first two elements of the array are swapped
 	public static void swapArrayOfTwo(int[] arr) {
+		int z= arr[1];
+		 arr[1]= arr[2];
+		arr[2]=z;
 		
 	}
 	
@@ -31,13 +34,31 @@ class _01_SwappingDigits {
 	//   Iterate through the array and when you find two elements that are out
 	//   of order, swap them. Repeat this until the array is in order.
 	public static void sortIntArray(int[] arr) {
-		
-	}
+		int z =0;
+			for (int j = 0; j < arr.length ; j++) {
+				for (int i = 0; i < arr.length-1; i++) {
+					
+				
+				z=arr[j];
+				if(arr[j]>arr[j+1]) {
+					arr[j]= arr[j+1];
+					arr[j+1]= z;
+				}
+				}}
+		}
+	
 	
 	//3. Complete the method so that it finds the middle number in the array.
 	//   *Hint* it helps to sort it first.
 	//   *Double Hint* Use the method you already wrote in step 2 to sort it
 	public static int findMiddle(int[] arr) {
-		return 0;
+		
+		
+		sortIntArray(arr);
+			int mid =arr[arr.length/2];
+			
+			
+		
+		return mid;
 	}
 }
