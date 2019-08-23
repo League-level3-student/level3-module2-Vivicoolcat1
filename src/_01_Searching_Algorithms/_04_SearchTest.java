@@ -8,10 +8,11 @@ class _04_SearchTest {
 
 	// A MINIMUM OF 3 TESTS ARE REQUIRED FOR EACH METHOD
 	
-	@Test
-	public void testLinearSearch() {
-		//1. use the assertEquals method to test your linear search method.
-	}
+//	@Test
+//	public void testLinearSearch() {
+//		//1. use the assertEquals method to test your linear search method.
+//		
+//	}
 
 	@Test
 	public void testBinarySearch() {
